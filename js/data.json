@@ -1,0 +1,32 @@
+[
+  {
+    "Username": "ha***",
+    "Deposit": 700,
+    "winning %": 300,
+    "withdrawal": 2800
+  },
+  {
+    "Username": "hw*****",
+    "Deposit": 700,
+    "winning %": 255,
+    "withdrawal": 2485
+  },
+  {
+    "Username": "vf******",
+    "Deposit": 400,
+    "winning %": 300,
+    "withdrawal": 1600
+  },
+  {
+    "Username": "rb****",
+    "Deposit": 500,
+    "winning %": 90,
+    "withdrawal": 950
+  },
+  {
+    "Username": "qd*****",
+    "Deposit": 200,
+    "winning %": 105,
+    "withdrawal": 410
+  }
+]
