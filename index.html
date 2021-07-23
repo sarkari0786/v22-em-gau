@@ -1052,7 +1052,7 @@
 				var newArrjson = [];
 				newArrjson.push(data);
 				for (let i = 0; i < newArrjson.length; i++) {
-					//console.log(newArrjson[i][0].Username)
+					//console.log(newArrjson[i][0].username)
 					function randomNumber(min, max) {
 						return Math.floor(Math.random() * (max - min) + min);
 					}
@@ -1077,7 +1077,7 @@
 							myculs['Winning'] = myculs['Winning'] + "%";
 						}
 						//console.log(myculs['username']);
-						$("#oc_get1").html('<div class="row inner_lwt fadein" ><div class="col-md-2 col-xs-12"><p class="flwt one">' + res + '</p></div><div class="col-md-7 col-xs-12"><h4>' + myculs['Username']+ "****" + ' Withdrawal <h3>RM ' + myculs['Withdrawal'] + '</h3><p>Recent Deposit <span>RM ' + myculs['Deposit'] + '</span></p></div><div class="col-md-3 col-xs-12"><p>' + myculs['Winning'] + '</p></div>');
+						$("#oc_get1").html('<div class="row inner_lwt fadein" ><div class="col-md-2 col-xs-12"><p class="flwt one">' + res + '</p></div><div class="col-md-7 col-xs-12"><h4>' + myculs['username']+ "****" + ' Withdrawal <h3>RM ' + myculs['Withdrawal'] + '</h3><p>Recent Deposit <span>RM ' + myculs['Deposit'] + '</span></p></div><div class="col-md-3 col-xs-12"><p>' + myculs['Winning'] + '</p></div>');
 					}, time1);
 	
 					// fist ends here
@@ -1085,7 +1085,7 @@
 						var mycusl = randomNumber(201, 400);
 						console.log(mycusl);
 						var myculs = newArrjson[i][mycusl];
-						var str = myculs['Username'];
+						var str = myculs['username'];
 						var res = str.charAt(0);
 						if(myculs['Winning'] >= 1000)
 						{
@@ -1095,14 +1095,14 @@
 							myculs['Winning'] = myculs['Winning'] + "%";
 						}
 						//console.log(myculs['username']);
-						$("#oc_get2").html('<div class="row inner_lwt fadein" ><div class="col-md-2 col-xs-12"><p class="flwt two">' + res + '</p></div><div class="col-md-7 col-xs-12"><h4>' + myculs['Username'] + "*****" + ' Withdrawal <h3>RM ' + myculs['Withdrawal'] + '</h3><p>Recent Deposit <span>RM ' + myculs['Deposit'] + '</span></p></div><div class="col-md-3 col-xs-12"><p>' + myculs['Winning'] + '</p></div>');
+						$("#oc_get2").html('<div class="row inner_lwt fadein" ><div class="col-md-2 col-xs-12"><p class="flwt two">' + res + '</p></div><div class="col-md-7 col-xs-12"><h4>' + myculs['username'] + "*****" + ' Withdrawal <h3>RM ' + myculs['Withdrawal'] + '</h3><p>Recent Deposit <span>RM ' + myculs['Deposit'] + '</span></p></div><div class="col-md-3 col-xs-12"><p>' + myculs['Winning'] + '</p></div>');
 					}, time2);
 	
 					setInterval(function() {
 						var mycusl = randomNumber(201, 400);
 						console.log(mycusl);
 						var myculs = newArrjson[i][mycusl];
-						var str = myculs['Username'];
+						var str = myculs['username'];
 						var res = str.charAt(0);
 						if(myculs['Winning'] >= 1000)
 						{
@@ -1112,13 +1112,13 @@
 							myculs['Winning'] = myculs['Winning'] + "%";
 						}
 						//console.log(myculs['username']);
-						$("#oc_get2").html('<div class="row inner_lwt fadein" ><div class="col-md-2 col-xs-12"><p class="flwt thrd">' + res + '</p></div><div class="col-md-7 col-xs-12"><h4>' + myculs['Username']+ "*******" + ' Withdrawal <h3>RM ' + myculs['Withdrawal'] + '</h3><p>Recent Deposit <span>RM ' + myculs['Deposit'] + '</span></p></div><div class="col-md-3 col-xs-12"><p>' + myculs['Winning'] + '</p></div>');
+						$("#oc_get2").html('<div class="row inner_lwt fadein" ><div class="col-md-2 col-xs-12"><p class="flwt thrd">' + res + '</p></div><div class="col-md-7 col-xs-12"><h4>' + myculs['username']+ "*******" + ' Withdrawal <h3>RM ' + myculs['Withdrawal'] + '</h3><p>Recent Deposit <span>RM ' + myculs['Deposit'] + '</span></p></div><div class="col-md-3 col-xs-12"><p>' + myculs['Winning'] + '</p></div>');
 					}, time3);
 					setInterval(function() {
 						var mycusl = randomNumber(401, 600);
 						console.log(mycusl);
 						var myculs = newArrjson[i][mycusl];
-						var str = myculs['Username'];
+						var str = myculs['username'];
 						var res = str.charAt(0);
 						if(myculs['Winning'] >= 1000)
 						{
@@ -1128,13 +1128,13 @@
 							myculs['Winning'] = myculs['Winning'] + "%";
 						}
 						//console.log(myculs['username']);
-						$("#oc_get3").html('<div class="row inner_lwt fadein" ><div class="col-md-2 col-xs-12"><p class="flwt four">' + res + '</p></div><div class="col-md-7 col-xs-12"><h4>' + myculs['Username']+ "*****" + ' Withdrawal <h3>RM ' + myculs['Withdrawal'] + '</h3><p>Recent Deposit <span>RM ' + myculs['Deposit'] + '</span></p></div><div class="col-md-3 col-xs-12"><p>' + myculs['Winning'] + '</p></div>');
+						$("#oc_get3").html('<div class="row inner_lwt fadein" ><div class="col-md-2 col-xs-12"><p class="flwt four">' + res + '</p></div><div class="col-md-7 col-xs-12"><h4>' + myculs['username']+ "*****" + ' Withdrawal <h3>RM ' + myculs['Withdrawal'] + '</h3><p>Recent Deposit <span>RM ' + myculs['Deposit'] + '</span></p></div><div class="col-md-3 col-xs-12"><p>' + myculs['Winning'] + '</p></div>');
 					}, time4);
 					setInterval(function() {
 						var mycusl = randomNumber(601, 650);
 						console.log(mycusl);
 						var myculs = newArrjson[i][mycusl];
-						var str = myculs['Username'];
+						var str = myculs['username'];
 						var res = str.charAt(0);
 						if(myculs['Winning'] >= 1000)
 						{
@@ -1144,7 +1144,7 @@
 							myculs['Winning'] = myculs['Winning'] + "%";
 						}
 						//console.log(myculs['username']);
-						$("#oc_get4").html('<div class="row inner_lwt fadein" ><div class="col-md-2 col-xs-12"><p class="flwt one">' + res + '</p></div><div class="col-md-7 col-xs-12"><h4>' + myculs['Username'] + "****" + ' Withdrawal <h3>RM ' + myculs['Withdrawal'] + '</h3><p>Recent Deposit <span>RM ' + myculs['Deposit'] + '</span></p></div><div class="col-md-3 col-xs-12"><p>' + myculs['Winning'] + '</p></div>');
+						$("#oc_get4").html('<div class="row inner_lwt fadein" ><div class="col-md-2 col-xs-12"><p class="flwt one">' + res + '</p></div><div class="col-md-7 col-xs-12"><h4>' + myculs['username'] + "****" + ' Withdrawal <h3>RM ' + myculs['Withdrawal'] + '</h3><p>Recent Deposit <span>RM ' + myculs['Deposit'] + '</span></p></div><div class="col-md-3 col-xs-12"><p>' + myculs['Winning'] + '</p></div>');
 					}, time5);
 				}
 	
