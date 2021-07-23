@@ -1085,7 +1085,7 @@
 						var mycusl = randomNumber(201, 400);
 						console.log(mycusl);
 						var myculs = newArrjson[i][mycusl];
-						var str = myculs['Username'];
+						var str = myculs['username'];
 						var res = str.charAt(0);
 						if(myculs['Winning'] >= 1000)
 						{
@@ -1102,7 +1102,7 @@
 						var mycusl = randomNumber(201, 400);
 						console.log(mycusl);
 						var myculs = newArrjson[i][mycusl];
-						var str = myculs['Username'];
+						var str = myculs['username'];
 						var res = str.charAt(0);
 						if(myculs['Winning'] >= 1000)
 						{
@@ -1118,7 +1118,7 @@
 						var mycusl = randomNumber(401, 600);
 						console.log(mycusl);
 						var myculs = newArrjson[i][mycusl];
-						var str = myculs['Username'];
+						var str = myculs['username'];
 						var res = str.charAt(0);
 						if(myculs['Winning'] >= 1000)
 						{
@@ -1134,7 +1134,7 @@
 						var mycusl = randomNumber(601, 650);
 						console.log(mycusl);
 						var myculs = newArrjson[i][mycusl];
-						var str = myculs['Username'];
+						var str = myculs['username'];
 						var res = str.charAt(0);
 						if(myculs['Winning'] >= 1000)
 						{
@@ -1190,30 +1190,305 @@
 
 			var rewards = ["RM 10", "RM 7", "RM 5", "RM 12", "RM 15", "RM 10", "RM 8"];
 
+// 			$("#oc_opchstppbtn").click(function() {
+// 				// alert();
+// 				var reward = rewards[Math.floor(Math.random() * rewards.length)];
+// 				var chest_open = getCookie('chest_open');
+// 				var dateTime = new Date().toLocaleString();
+
+// 				if (chest_open == '') {
+
+// 					setCookie('chest_open', 'true', 1);
+
+// 					setTimeout(function() {
+// 						$(".oc_price_loader").css('display', 'none');
+// 						$("#occhst_reward").html("<h3>Congratulations!!</h3><h4>You won <span class='oc_rwrdtxt'>" + reward + "!!</span></h4><p class='money-icon mb-0'><img src='./images/money-bag.png' alt='money bag'></p><button type='button' class='btn btn-success btn-lg oc_claimnow_btn'>Claim Now!</button><p class='date-time'>" + dateTime + "</p><p class='note'>Please screenshot to keep proof!</p>");
+// 					}, 3000);
+
+// 				} else {
+
+// 					$(".oc_price_loader").css('display', 'none');
+// 					$("#occhst_reward").html("<h3>You can open once a day, pls come back tomorrow</h3>");
+
+// 				}
+
+
+// 			});
+			
 			$("#oc_opchstppbtn").click(function() {
-				// alert();
-				var reward = rewards[Math.floor(Math.random() * rewards.length)];
-				var chest_open = getCookie('chest_open');
-				var dateTime = new Date().toLocaleString();
+				
+				
+        // getting date
+        var today_date = new Date(); // cadling date function
+        var coupon_date = today_date.getDate(); // getting today date
+        var coupon_month = today_date.getMonth() + 1; // getting current month.
 
-				if (chest_open == '') {
+        // for testing purpse try to change the date and month from here and after testing please comment them as like its commented now
 
-					setCookie('chest_open', 'true', 1);
+        //coupon_date = 1; // testing the date if date is 1 what is our coupon code
+        // coupon_month = 3; // testing the month if the month is 3 then what is our coupon code
+       var coupon_new = "";
+        if(coupon_date === 1)
+        {
+            coupon_new = (coupon_date * 7) + "" + coupon_date + "M" + "W" + coupon_month + "N" + (coupon_month *2);
+            //console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 2)
+        {
+            coupon_new = (coupon_date * 8) + "" + coupon_date + "O" + "Y" + coupon_month + "P" + (coupon_month *4);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 3)
+        {
+            coupon_new = (coupon_date * 9) + "" + coupon_date + "Q" + "A" + coupon_month + "R" + (coupon_month *6);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 4)
+        {
+            coupon_new = (coupon_date * 10) + "" + coupon_date + "S" + "C" + coupon_month + "T" + (coupon_month *8);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 5)
+        {
+            coupon_new = (coupon_date * 11) + "" + coupon_date + "U" + "E" + coupon_month + "V" + (coupon_month *10);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 6)
+        {
+            coupon_new = (coupon_date * 12) + "" + coupon_date + "W" + "G" + coupon_month + "X" + (coupon_month *12);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 7)
+        {
+            coupon_new = (coupon_date * 13) + "" + coupon_date + "Y" + "I" + coupon_month + "Z" + (coupon_month *14);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 8)
+        {
+            coupon_new = (coupon_date * 14) + "" + coupon_date + "A" + "K" + coupon_month + "B" + (coupon_month *16);
+            console.log(coupon_new);
+           // document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 9)
+        {
+            coupon_new = (coupon_date * 15) + "" + coupon_date + "C" + "M" + coupon_month + "D" + (coupon_month *18);
+            console.log(coupon_new);
+           // document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 10)
+        {
+            coupon_new = (coupon_date * 16) + "" + coupon_date + "E" + "O" + coupon_month + "F" + (coupon_month *2);
+            console.log(coupon_new);
+            document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 11)
+        {
+            coupon_new = (coupon_date * 17) + "" + coupon_date + "G" + "Q" + coupon_month + "H" + (coupon_month *4);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 12)
+        {
+            coupon_new = (coupon_date * 18) + "" + coupon_date + "I" + "S" + coupon_month + "J" + (coupon_month *6);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 13)
+        {
+            coupon_new = (coupon_date * 19) + "" + coupon_date + "K" + "U" + coupon_month + "L" + (coupon_month *8);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 14)
+        {
+            coupon_new = (coupon_date * 20) + "" + coupon_date + "M" + "W" + coupon_month + "N" + (coupon_month *10);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 15)
+        {
+            coupon_new = (coupon_date * 3) + "" + coupon_date + "O" + "Y" + coupon_month + "P" + (coupon_month *12);
+            console.log(coupon_new);
+           // document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 16)
+        {
+            coupon_new = (coupon_date * 4) + "" + coupon_date + "Q" + "A" + coupon_month + "R" + (coupon_month *14);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 17)
+        {
+            coupon_new = (coupon_date * 5) + "" + coupon_date + "S" + "C" + coupon_month + "T" + (coupon_month *16);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 18)
+        {
+            coupon_new = (coupon_date * 6) + "" + coupon_date + "U" + "E" + coupon_month + "V" + (coupon_month *18);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 19)
+        {
+            coupon_new = (coupon_date * 7) + "" + coupon_date + "W" + "G" + coupon_month + "X" + (coupon_month *2);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 20)
+        {
+            coupon_new = (coupon_date * 8) + "" + coupon_date + "Y" + "I" + coupon_month + "Z" + (coupon_month *4);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 21)
+        {
+            coupon_new = (coupon_date * 9) + "" + coupon_date + "A" + "K" + coupon_month + "B" + (coupon_month *6);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 22)
+        {
+            coupon_new = (coupon_date * 10) + "" + coupon_date + "C" + "M" + coupon_month + "D" + (coupon_month *8);
+            console.log(coupon_new);
+           // document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 23)
+        {
+            coupon_new = (coupon_date * 11) + "" + coupon_date + "E" + "O" + coupon_month + "F" + (coupon_month *10);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 24)
+        {
+            coupon_new = (coupon_date * 12) + "" + coupon_date + "G" + "Q" + coupon_month + "H" + (coupon_month *12);
+            console.log(coupon_new);
+           // document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 25)
+        {
+            coupon_new = (coupon_date * 13) + "" + coupon_date + "I" + "S" + coupon_month + "J" + (coupon_month *14);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 26)
+        {
+            coupon_new = (coupon_date * 14) + "" + coupon_date + "K" + "U" + coupon_month + "L" + (coupon_month *16);
+            console.log(coupon_new);
+           // document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 27)
+        {
+            coupon_new = (coupon_date * 15) + "" + coupon_date + "M" + "W" + coupon_month + "N" + (coupon_month *18);
+            console.log(coupon_new);
+           // document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 28)
+        {
+            coupon_new = (coupon_date * 16) + "" + coupon_date + "O" + "Y" + coupon_month + "P" + (coupon_month *2);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 29)
+        {
+            coupon_new = (coupon_date * 17) + "" + coupon_date + "Q" + "A" + coupon_month + "R" + (coupon_month *4);
+            console.log(coupon_new);
+           // document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 30)
+        {
+            coupon_new = (coupon_date * 18) + "" + coupon_date + "S" + "C" + coupon_month + "T" + (coupon_month *6);
+            console.log(coupon_new);
+           // document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
+        else if(coupon_date === 31)
+        {
+            coupon_new = (coupon_date * 19) + "" + coupon_date + "U" + "E" + coupon_month + "V" + (coupon_month *8);
+            console.log(coupon_new);
+            //document.getElementById('coupon_code').innerHTML = coupon_new;
+        }
 
-					setTimeout(function() {
-						$(".oc_price_loader").css('display', 'none');
-						$("#occhst_reward").html("<h3>Congratulations!!</h3><h4>You won <span class='oc_rwrdtxt'>" + reward + "!!</span></h4><p class='money-icon mb-0'><img src='./images/money-bag.png' alt='money bag'></p><button type='button' class='btn btn-success btn-lg oc_claimnow_btn'>Claim Now!</button><p class='date-time'>" + dateTime + "</p><p class='note'>Please screenshot to keep proof!</p>");
-					}, 3000);
+      var   coupon_reward_points =  coupon_new.slice(-1);
+        coupon_reward_points++;
+        //console.log(coupon_reward_points++);
 
-				} else {
+let $currency_code = "";
 
-					$(".oc_price_loader").css('display', 'none');
-					$("#occhst_reward").html("<h3>You can open once a day, pls come back tomorrow</h3>");
 
+            if(coupon_reward_points == 1)
+            {
+                $currency_code = "USD";
+            }else if(coupon_reward_points == 2)
+            {
+                $currency_code = "RM";
+            } else if(coupon_reward_points == 3)
+            {
+                $currency_code = "Chips";
+            }else if(coupon_reward_points == 4)
+            {
+                $currency_code = "Points";
+            }
+            else if(coupon_reward_points == 5)
+            {
+                $currency_code = "USD";
+            }else if(coupon_reward_points == 6)
+            {
+                $currency_code = "RM";
+            } else if(coupon_reward_points == 7)
+            {
+                $currency_code = "Chips";
+            }else if(coupon_reward_points == 8)
+            {
+                $currency_code = "Points";
+            }else if(coupon_reward_points == 9)
+            {
+                $currency_code = "USD";
+            }else if(coupon_reward_points == 0)
+            {
+                $currency_code = "RM";
+            }
+
+
+            //document.write("your coupon code is " + coupon_new + " and your coupon amount is " + coupon_reward_points +" your currency symbol is " + $currency_code);
+				var currency_prefix= "";
+				var currency_suffix = "";
+				if($currency_code == "USD" || $currency_code == "RM")
+				{
+					currency_prefix = $currency_code;
+				}else if($currency_code == "Points" || $currency_code == "Chips")
+				{
+					currency_suffix = $currency_code;
 				}
 
-
-			});
+			
+				//var reward = rewards[Math.floor(Math.random() * rewards.length)];
+				var chest_open = getCookie('chest_open');
+				var dateTime = new Date().toLocaleString();
+	
+				if (chest_open == '') {
+	
+					setCookie('chest_open', 'true', 1);
+	
+					setTimeout(function() {
+						$(".oc_price_loader").css('display', 'none');
+						$("#occhst_reward").html("<h3>Congratulations!!</h3><h4>You won <span class='oc_rwrdtxt'>" + currency_prefix +  " " + coupon_reward_points + " " + currency_suffix +"</span>" + " and your coupon code is <span class='oc_rwrdtxt'>"+ coupon_new +"!!</span></h4><p class='money-icon mb-0'><img src='./images/money-bag.png' alt='money bag'></p><button class='oc_claimnow_btn'>Claim Now!!</button><p class='date-time'>" + dateTime + "</p><p class='note'>Please screenshot to keep proof!</p>");
+					}, 3000);
+	
+				} else {
+	
+					$(".oc_price_loader").css('display', 'none');
+					$("#occhst_reward").html("<h3>You can open once a day, pls come back tomorrow</h3>");
+	
+				}
+				});
+			//////////////////////////
 
 			$("#oc_opchstpp").on("hidden.bs.modal", function() {
 				$(".oc_price_loader").css('display', 'block');
